@@ -3707,7 +3707,7 @@ const docs: DocPage[] = [
       heading: "접속 방법",
       items: [
         { title: "FiveM 설치", desc: "공식 사이트에서 FiveM을 설치합니다." },
-        { title: "서버 즐겨찾기", desc: "F8 눌러 `cfx.re/join/xlzdevr` 을 입력합니다." },
+        { title: "서버 즐겨찾기", desc: "F8 눌러 `cfx.re/join/leeezl5` 을 입력합니다." },
         { title: "캐릭터 생성", desc: "안내에 따라 캐릭터를 생성하면 끝!" },
       ],
     },
