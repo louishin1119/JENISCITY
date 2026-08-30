@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  /* Surfaces */
+  --color-asphalt: #0b0d12;
+  --color-surface: #14171f;
+  --color-surface-raised: #1a1e29;
+  --color-hairline: #262b38;
+
+  /* Brand */
+  --color-signal: #2e6bff;
+  --color-signal-dim: #1c3f8f;
+  --color-violet: #8b5cf6;
+  --color-amber: #f5a623;
+
+  /* Text */
+  --color-ink: #e8eaf0;
+  --color-ink-muted: #8a8f9c;
+  --color-ink-faint: #545a6b;
+
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@theme inline {
+  --color-asphalt: var(--color-asphalt);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-hairline: var(--color-hairline);
+  --color-signal: var(--color-signal);
+  --color-signal-dim: var(--color-signal-dim);
+  --color-violet: var(--color-violet);
+  --color-amber: var(--color-amber);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-ink-faint: var(--color-ink-faint);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  border-color: var(--color-hairline);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-asphalt);
+  color: var(--color-ink);
+  font-family: var(--font-body), sans-serif;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(46, 107, 255, 0.15), transparent),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
+}
+
+::selection {
+  background: var(--color-signal);
+  color: white;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.mono-tag {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.06em;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
