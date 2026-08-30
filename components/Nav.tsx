@@ -1,8 +1,8 @@
 import Link from "next/link";
 import StatusBadge from "./StatusBadge";
 
-const DISCORD_URL = "https://discord.gg/2026turn";
-const JOIN_URL = "https://cfx.re/join/xlzdevr";
+const DISCORD_URL = "https://discord.gg/hy2dbJB9kj";
+const JOIN_URL = "https://cfx.re/join/leeezl5";
 
 export default function Nav() {
   return (
